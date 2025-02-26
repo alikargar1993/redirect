@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Matterhorn Redirect</title>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        var fallbackDelay = 1500; // delay in milliseconds before falling back to store page
+
+        // iOS detection
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+          // Attempt to open the Matterhorn app via its URL scheme
+          window.location = 'matterhorn://'; // Replace with the actual URL scheme
+
+          // If the app isn’t installed, redirect to the App Store after a short delay
+          setTimeout(function() {
+            window.location =
+              'https://apps.apple.com/us/app/matterhorn/id1440571628'; // Replace with your actual App Store URL
+          }, fallbackDelay);
+        }
+        // Android detection
+        else if (/android/i.test(userAgent)) {
+          // Use an intent URL to open the Matterhorn app
+          window.location =
+            'intent://#Intent;scheme=matterhorn;package=com.bonfire.matterhorndev;end'; // Replace with your app's scheme and package name
+
+          // Fallback to the Play Store if the app isn’t installed
+          setTimeout(function() {
+            window.location =
+              'https://play.google.com/store/apps/details?id=com.bonfire.matterhorn'; // Replace with your actual Play Store URL
+          }, fallbackDelay);
+        }
+        // Fallback for other devices/browsers
+        else {
+          document.body.innerHTML =
+            '<p>This page is intended for iOS or Android devices. Please visit this page on your mobile device.</p>';
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <p>
+      If you are not redirected automatically, please
+      <a href="#" onclick="location.reload();">click here</a>.
+    </p>
+  </body>
+</html>
