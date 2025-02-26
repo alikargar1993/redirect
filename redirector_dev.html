@@ -8,7 +8,7 @@
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        var fallbackDelay = 1500; // delay in milliseconds before falling back to store page
+        var fallbackDelay = 5000; // delay in milliseconds before falling back to store page
 
         // iOS detection
         if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
