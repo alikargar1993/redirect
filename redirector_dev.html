@@ -13,7 +13,7 @@
         // iOS detection
         if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
           // Attempt to open the Matterhorn app via its URL scheme
-          window.location = 'matterhorn://'; // Replace with the actual URL scheme
+          window.location = 'matterhorndev://'; // Replace with the actual URL scheme
 
           // If the app isn’t installed, redirect to the App Store after a short delay
           setTimeout(function() {
@@ -25,7 +25,7 @@
         else if (/android/i.test(userAgent)) {
           // Use an intent URL to open the Matterhorn app
           window.location =
-            'intent://#Intent;scheme=matterhorn;package=com.bonfire.matterhorndev;end'; // Replace with your app's scheme and package name
+            'intent://#Intent;scheme=matterhorndev;package=com.bonfire.matterhorndev;end'; // Replace with your app's scheme and package name
 
           // Fallback to the Play Store if the app isn’t installed
           setTimeout(function() {
