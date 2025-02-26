@@ -26,8 +26,7 @@
         else if (/android/i.test(userAgent)) {
           // Use an intent URL to open the Matterhorn app
           window.location =
-            'intent://open#Intent;scheme=https;package=com.bonfire.matterhorn;end';
-
+            'intent://open/#Intent;scheme=https;package=com.bonfire.matterhorn;S.browser_fallback_url=https%3A%2F%2Fmatterhorn.app.link%2Ffallback;end'; // Fallback to the Play Store if the app isn’t installed
           // Fallback to the Play Store if the app isn’t installed
           setTimeout(function() {
             window.location =
