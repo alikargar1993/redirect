@@ -4,11 +4,11 @@
     "details": [
       {
         "appID": "7374UBM49W.com.bonfire.zermattdev",
-        "paths": ["*"]
+        "paths": ["/alikargar1993/redirect/*"]
       },
       {
         "appID": "7374UBM49W.com.bonfire.zermatt",
-        "paths": ["*"]
+        "paths": ["/alikargar1993/redirect/*"]
       }
     ]
   }
