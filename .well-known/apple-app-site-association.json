@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "7374UBM49W.com.bonfire.zermattdev",
+        "paths": ["*"]
+      },
+      {
+        "appID": "7374UBM49W.com.bonfire.zermatt",
+        "paths": ["*"]
+      }
+    ]
+  }
+}

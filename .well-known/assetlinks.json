@@ -1,0 +1,22 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bonfire.matterhorn",
+      "sha256_cert_fingerprints": [
+        "4B:A7:A7:8B:7B:A8:75:62:AE:8E:A4:FF:97:84:76:75:9F:C7:E4:AA:5D:88:1F:19:52:0B:D5:5E:70:61:AD:6D"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bonfire.matterhorndev",
+      "sha256_cert_fingerprints": [
+        "4B:A7:A7:8B:7B:A8:75:62:AE:8E:A4:FF:97:84:76:75:9F:C7:E4:AA:5D:88:1F:19:52:0B:D5:5E:70:61:AD:6D"
+      ]
+    }
+  }
+]
